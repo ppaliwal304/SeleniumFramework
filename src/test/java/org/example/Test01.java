@@ -26,7 +26,7 @@ import org.testng.annotations.Test;
             driver = new ChromeDriver(options);
         }
         @Description("Perform Actions select city from dropdown list")
-        @Test
+        @Test(groups = "QA")
         public void makemytrip() throws InterruptedException{
             driver.get("https://www.makemytrip.com");
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

@@ -2,6 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="All test suite">
     <test name="Selenium Automation">
+        <groups>
+            <run>
+                <include name="QA"></include>
+            </run>
+        </groups>
         <classes>
             <class name="org.example.Test01"></class>
         </classes>
